@@ -27,12 +27,11 @@ or start on the [landing page](http://localhost:8000/)
 #### Prerequisites
 - Fork this repository
 
-    ```
 #### Requirements
 
 1Prepare a docker-compose file that will build and start both MySQL db and Todolist app
 Remove RUN python manage.py migrate as the database is no longer available at the build time
-Refactor ENTRYPOINT to execute both db migration and application start 
+Refactor ENTRYPOINT to execute both db migration and application start
 	Example: ENTRYPOINT ["sh", "-c", “command1 && command2”]
 The application should work with no issues after running docker-compose up
 Update the README.md file by adding a new section with instructions on how to run and stop containers with docker-compose 
